@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TravelPal</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>✈️!!Welcome Travellers!!✈️</h1>
+    <p>I am your friendly app <b>TravelPal</b>, guiding you regarding the wonders of Portugal</p>
+  
+    <!-- Weather map part -->
+    <div class="one">
+      <main>
+        <p>Select the name of a city to find out the weather conditions</p>
+        <form method="POST" id="weatherForm">
+            <label for="weatherForm">City:</label>
+            <select id="city">
+              <option value="Lisbon">Lisbon</option>
+              <option value="Porto">Porto</option>
+              <option value="Sintra">Sintra</option>
+              <option value="Leiria">Leiria</option>
+              <option value="Cascais">Cascais</option>
+              <option value="Costa Nova">Costa Nova</option>
+              <option value="Evora">Evora</option>
+              <option value="Guarda">Guarda</option>
+              <option value="Tavira">Tavira</option>
+              <option value="Braga">Braga</option>
+            </select>
+            <input id="postSubmit" type="submit" value="Submit" />
+        </form>
+      </main>
+    </div><br><br><br>
+
+    <!-- Meal selection part-->
+    <div class="two">
+      <main>
+        <p>Select the name of the meal for information</p>
+        <form method="POST" id="meal-form">
+            <label for="meal">Meal:</label>
+            <select id="meal">
+              <option value="Fish fofos">Fish Fofos</option>
+              <option value="Febras assadas">Febras assadas</option>
+              <option value="Caldeirada de peixe">Caldeirada de peixe</option>
+              <option value="Portuguese custard tarts">Portuguese custard tarts</option>
+              <option value="Portuguese prego with green piri-piri">Portuguese prego with green piri-piri</option>
+              <option value="Grilled Portuguese sardines">Grilled Portuguese sardines</option>
+              <option value="Piri-piri chicken and slaw">Piri-piri chicken and slaw</option>
+            </select>
+            <input id="search-btn" type="submit" value="Submit" />
+            <div id="result"></div>
+        </form>
+      </main>
+    </div><br><br>
+
+    <div id="meal-list"></div>
+
+
+    <!-- Recommened places part-->
+    <br><br><br><br>
+    <div class="three">
+      <div class="row">
+        <div class="collumn">
+          <div class="container">
+            <img src="https://images.thestar.com/AjM8npQm6Orzy43RmIfhdfrzgiI=/1086x724/smart/filters:cb(1655384062223):format(webp)/https://www.thestar.com/content/dam/thestar/life/travel/2022/06/17/where-to-go-in-lisbon-portugal-five-unique-gems-in-the-city-from-a-beautiful-new-museum-to-a-quirky-speakeasy/lisbon_portugal_credit_sean3810_istock.jpg" class="image" /><br>
+              <div class="overlay">
+                <button class="text"><a href="https://www.visitlisboa.com/en"><strong>Lisbon</strong></a></button>
+              </div>
+          </div>
+        </div>
+
+        <div class="collumn">
+          <div class="container">
+            <img src="https://www.qantas.com/content/travelinsider/en/explore/europe/portugal/guide-to-porto-best-things-to-do-hotels-restaurants-trains/jcr:content/parsysTop/hero.img.1440.high.jpg/1576553366061.jpg" class="image" /><br>
+              <div class="overlay">
+                <button class="text"><a href="https://visitporto.travel/en-GB/home#/"><strong>Porto</strong></a></button>
+              </div>
+          </div>
+        </div>
+
+        <div class="collumn">
+          <div class="container">
+            <img src="https://media.istockphoto.com/id/986678790/photo/azenhas-do-mar-sintra-near-lisbon-on-a-beautiful-sunset.jpg?s=612x612&w=0&k=20&c=VwZpqEJUM65Ppi5qkj35TN23NgHsJ_lWC8IqlCtfFKA=" class="image" /><br>
+              <div class="overlay">
+                <button class="text"><a href="https://www.parquesdesintra.pt/en/"><strong>Sintra</strong></a></button>
+              </div>
+          </div>
+        </div>
+
+      <div class="row">
+        <div class="collumn">
+          <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/LEIRIA_E_CASTELO.jpg/220px-LEIRIA_E_CASTELO.jpg" class="image" /><br>
+              <div class="overlay">
+                <button class="text"><a href="https://www.visiteleiria.pt/en/home/"><strong>Leiria</strong></a></button>
+              </div>
+          </div>
+        </div>
+
+        <div class="collumn">
+          <div class="container">
+            <img src="https://www.back-packer.org/wp-content/uploads/titel-tips-things-to-do-in-cascais-portugal-guide-990x661.jpeg" class="image" /><br>
+              <div class="overlay">
+                <button class="text"><a href="https://www.visitcascais.com/en"><strong>Cascais</strong></a></button>
+              </div>
+          </div>
+        </div>
+
+        <div class="collumn">
+          <div class="container">
+            <img src="https://cdn.travel-in-portugal.com/sites/default/files/styles/x_large/public/photos/aveiro-costa-nova.jpg" class="image" /><br>
+              <div class="overlay">
+                <button class="text"><a href="https://www.centerofportugal.com/poi/costa-nova"><strong>Costa Nova</strong></a></button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="functions.js"></script>
+  </body>
+</html>
